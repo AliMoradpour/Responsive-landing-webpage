@@ -131,6 +131,18 @@ button {
 .list li a:hover{
   color: var(--primary-color) !important;
 }
+
+.page-container{
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  margin: 2rem 0;
+  grid-gap: 1.5rem;
+}
+.page-container article{
+  grid-row: 1 / span 3;
+}
+.card p{color: #000;}
+.card h2{color: #000;}
 /* Navigation */
 
 #main-nav {
@@ -228,4 +240,22 @@ button {
 }
 #main-footer .footer-container input[type='submit']{
   width: 90%;
+}
+
+/* Article page  */
+
+#artcle .meta{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+  padding: .5rem;
+}
+#article .meta .category{
+  margin-top: .4rem;
+}
+#categories .list li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
